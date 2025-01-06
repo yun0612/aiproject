@@ -1,0 +1,40 @@
+<html lang="ko">
+	<head>
+		<title>HTML test</title>
+		<script>
+			function test() {
+				alert("test alert!");
+			}
+			function load() {
+				alert("안녕하세요 저희 홈페이지에 방문해주셔서 감사합니다");
+			}
+		</script>
+			
+	</head>
+	<body onload="load()">
+		<font color="red" size="2">한국IT교육원</font>
+		<br>
+		<img src="./images.jpg" height="80">
+		<br>
+		<a href="./test2.html">회사 소개 페이지 이동</a>
+		<h2><a href="javascript:test()">hello world</a></h2>
+		
+		<!-- 콤보 상자 -->
+		<select>
+			<option>석류</option>
+			<option>사과</option>
+			<option>바나나</option>
+			<option selected>쥬스</option>
+			<option>맥주</option>
+			<option>소주</option>
+			<option>와인</option>
+		</select>
+		
+		<!-- 선택 -->
+		<input type="radio" name="radio" id="radio1">사과
+		<input type="radio" name="radio" id="radio2">바나나
+		
+		<!-- 체크 -->
+		<input type="checkbox" name="check">유무
+	</body>
+</html>

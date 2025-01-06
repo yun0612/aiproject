@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<script>
+			function fn_test1() {
+				var add = parseInt(document.fm1.test1.value)+parseInt(document.fm1.test2.value);
+				document.fm1.test3.value = add;
+				alert("결과는" + add + "입니다. 다시 해보세요.");
+			}
+			
+			function fn_sum() {
+				var i;
+				var sum=0;
+				for (i=0; i<=10; i++) {
+					sum = parseInt(sum) + parseInt(i);
+				}
+				alert("0부터 10까지의 합은 " + sum + "입니다.");
+			}
+		</script>
+	</head>
+	<body>
+		<font color="blue" size="2">한국IT교육원</font>
+		<br>
+		<button onclick="fn_sum()">10까지 더하기</button>
+		<form name="fm1">
+			<button onclick="fn_test1()">더하기</button>
+			<input type="text" name="test1" id="test1">+
+			<input type="text" name="test2" id="test2">=
+			<input type="text" name="test3" id="test3">
+		</form>
+		<br>
+		<img src="./images.jpg" height="80">
+		<br>
+		<a href="./test.html">메인 페이지 이동</a>
+	</body>
+</html>
